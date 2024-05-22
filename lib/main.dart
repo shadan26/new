@@ -20,7 +20,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '7doctor/moduels/paymentmodel/paymentscreen.dart';
 import 'map_screen.dart';
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -200,7 +199,7 @@ class _MyAppState extends State<MyApp> {
               unselectedItemColor: Colors.white,
             )
         ),
-        home:MySample(),
+        home:widget.StartWidget,
         debugShowCheckedModeBanner: false,
       ),
     );
